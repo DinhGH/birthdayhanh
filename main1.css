@@ -1,0 +1,37 @@
+body {
+    background-color: #49e20d;
+}
+div.back {
+    background-image: url("hanh.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+}
+h2{
+    font-family:"Dancing Script" ;
+    margin: 0px 19px;
+    animation: change_color 30s infinite;
+    /* color: #47b200; */
+}
+@keyframes change_color {
+    20%{
+        color:#378900;
+    }
+    40%{
+        color:#00b2b2;
+    }
+    60%{
+        color:#e67136;
+    }
+    80%{
+        color:#1711d8;
+    }
+    100%{
+        color:#000000;
+    }
+}

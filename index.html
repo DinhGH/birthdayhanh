@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BirthDay</title>
+    <link rel="icon" href="icons8-birthday-48.png" >
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body>
+    <div class="taskbar">
+        <ul class="ul_taskbar">
+            <p>Home</p>
+            <p>About me</p>
+        </ul>
+        <ul>
+            <button>Đăng Nhập</button>
+        </ul>
+    </div>
+    <div class="div_container">
+        <div >
+            <h1>CHÚC MỪNG SINH NHẬT EM!</h1>
+        </div>
+        <form>
+            <label for="user">Tên:</label>
+            <input type="text" id="user" placeholder="Tên của em">
+            <label for="pass">Mật Khẩu:</label>
+            <input type="password" id="pass" placeholder="Ngày Tháng Năm Sinh">
+        </form>
+        <div class="div_container_child">
+            <h3>Nhấn YÊU ANH để xem lời chúc chi tiết</h3>
+            <div class="div_but">
+                <img src="iconchitay.png">
+                <button class="dn" onclick="f()">YÊU ANH</button>
+            </div>
+        </div>
+    </div>
+
+   <script>
+   
+    function f() {
+        var use = document.getElementById("user").value;
+        var pas = document.getElementById("pass").value;
+        if(use == "Hanh" && pas == "09082005"){
+            window.location.href = "index1.html"
+        }
+        else if(use == "" && pas == "") {
+            alert("Em phải nhập tên với mật khẩu thì mới vào được nha:))")
+        }
+        else {
+            alert("Em nhập sai rồi, thử lại đi:)")
+        }
+    }
+   </script>
+</body>
+</html>
